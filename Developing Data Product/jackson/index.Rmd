@@ -1,0 +1,36 @@
+---
+title       : Developing Data Product
+subtitle    : Slidify Presentation
+author      : Jackson
+job         : Analyst
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Description
+
+The Shiny App is use to display the exploration of The Relationship between a set of variable and miles per gallon of the Motor Trend.
+
+
+--- .class #id 
+
+## Details
+
+Motor Trend, a magazine about the automobile industry Looking at a data set of a collection of cars, they are interested in exploring the relationship between a set of variables and miles per gallon (MPG) (outcome). They are particularly interested in the following two questions: Is an automatic or manual transmission better for MPG. Quantify the MPG difference between automatic and manual transmissions.The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).
+
+---
+## Summary of mtcars
+```{r}
+summary(mtcars)
+```
+
+---
+## Thank you 
+
+
+
+

@@ -1,0 +1,17 @@
+{
+    "contents" : "Presentation\n========================================================\nauthor: Jackson\ndate: 28 Feb 2016\n\nDescription\n========================================================\n\n\n\nThe Shiny App is use to display the exploration of The Relationship between a set of variable and miles per gallon of the Motor Trend.\n\n\nDetails\n========================================================\n\nMotor Trend, a magazine about the automobile industry Looking at a data set of a collection of cars, they are interested in exploring the relationship between a set of variables and miles per gallon (MPG) (outcome). They are particularly interested in the following two questions: Is an automatic or manual transmission better for MPG. Quantify the MPG difference between automatic and manual transmissions.The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).\n\nSummary of mtcars\n========================================================\n\n```{r}\nsummary(mtcars)\n```\n",
+    "created" : 1456686924450.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "22447667",
+    "id" : "36A040EC",
+    "lastKnownWriteTime" : 1456687507,
+    "path" : "C:/Users/modem/Desktop/Developing Data Product/Developing Data Product/jackson/Presentation.Rpres",
+    "project_path" : "jackson/Presentation.Rpres",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_presentation"
+}

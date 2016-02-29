@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nlibrary(datasets)\n\nmpgData <- mtcars\nmpgData$am <- factor(mpgData$am, labels = c(\"Automatic\", \"Manual\"))\n\nshinyServer(function(input, output) {\n  \n  formulaText <- reactive({\n    paste(\"mpg ~\", input$variable)\n  })\n  \n  formulaTextPoint <- reactive({\n    paste(\"mpg ~\", \"as.integer(\", input$variable, \")\")\n  })\n  \n  fit <- reactive({\n    lm(as.formula(formulaTextPoint()), data=mpgData)\n  })\n  \n  output$caption <- renderText({\n    formulaText()\n  })\n  \n  output$mpgBoxPlot <- renderPlot({\n    boxplot(as.formula(formulaText()), \n            data = mpgData,\n            outline = input$outliers)\n  })\n  \n  output$fit <- renderPrint({\n    summary(fit())\n  })\n  \n  output$mpgPlot <- renderPlot({\n    with(mpgData, {\n      plot(as.formula(formulaTextPoint()))\n      abline(fit(), col=2)\n    })\n  })\n  \n})",
+    "created" : 1456679585408.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "276219832",
+    "id" : "AB6D7F9",
+    "lastKnownWriteTime" : 1456680592,
+    "path" : "C:/Users/modem/Desktop/Developing Data Product/Developing Data Product/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
